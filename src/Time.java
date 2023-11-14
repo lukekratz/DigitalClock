@@ -20,16 +20,6 @@ public class Time {
         setTime(seconds, minutes, hours);
     }
 
-    public Time(Time someTime){
-        if (someTime == null){
-            System.out.println("Fatal Error");
-            System.exit(0);
-        }
-        seconds = someTime.seconds;
-        minutes = someTime.minutes;
-        hours = someTime.hours;
-    }
-
     public void setTime(String seconds, String minutes, String hours){
         if (timeOK(seconds, minutes, hours)){
             this.seconds = seconds;
